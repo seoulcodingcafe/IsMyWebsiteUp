@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">IsMyWebsiteUp</string>
+    <string name="task">Task</string>
+    <string name="schedule">Schedule</string>
+    <string name="result">Result</string>
+    <string name="about">About</string>
+    <string name="license">License</string>
+    <string name="version">Version</string>
+    <string name="close">Close</string>
+    <string name="permissions">Permissions</string>
+    <string name="permissions_in_this_app">Permissions in this app</string>
+    <string name="internet">Internet</string>
+    <string name="internet_d">For checking your specified websites ONLY.</string>
+    <string name="access_network_state">Access network state</string>
+    <string name="access_network_state_d">For checking if connected to wifi or data or nothing.</string>
+    <string name="receive_boot_completed">Receive boot completed</string>
+    <string name="receive_boot_completed_d">For continuing scheduled tasks if device rebooted.</string>
+    <string name="wake_lock">Wake lock</string>
+    <string name="wake_lock_d">For keeping CPU awake when running but screen is off. You can disable inside \&quot;configuration\&quot;.</string>
+    <string name="request_ignore_battery_optimizations">Request \nignore \nbattery \noptimizations</string>
+    <string name="request_ignore_battery_optimizations_d">For requesting disable battery optimizations. Only if you use it.</string>
+    <string name="configuration">Configuration</string>
+    <string name="theme_configuration">Theme configuration</string>
+    <string name="run">Run</string>
+    <string name="run_check">Run check</string>
+    <string name="schedule_check">Schedule check</string>
+    <string name="required">Required</string>
+    <string name="URL">URL</string>
+    <string name="optional">Optional</string>
+    <string name="also_check_if_hyperlinks_are_up">Also check if hyperlinks are up</string>
+    <string name="check_hyperlinks_max_depth">Check hyperlinks max depth</string>
+    <string name="check_hyperlink_only_if_match_regex">Check hyperlink only if match regex</string>
+    <string name="check_regex">Check regex</string>
+    <string name="dont_check_hyperlink_if_match_regex">Don\&apos;t check hyperlink if match regex</string>
+    <string name="dont_check_regex">Don\&apos;t check regex</string>
+    <string name="send_referer">Send referer</string>
+    <string name="referer">Referer</string>
+    <string name="check_hyperlinks_only_to_specific_domains">Check hyperlinks only to specific domains</string>
+    <string name="domains">Domains (separated with commas)</string>
+    <string name="ignore_part">Ignore # and ? part</string>
+    <string name="check_javascript_hyperlinks">Check JavaScript hyperlinks</string>
+    <string name="user_agent">User agent</string>
+    <string name="accept_header">Accept header</string>
+    <string name="timeout">Timeout (seconds)</string>
+    <string name="retry">Retry</string>
+    <string name="retry_delay">Retry delay (seconds)</string>
+    <string name="send_do_not_track_dnt">Send Do-Not-Track (DNT)</string>
+    <string name="authorization_header">Authorization header</string>
+    <string name="accept_charset_header">Accept-Charset header</string>
+    <string name="accept_encoding_header">Accept-Encoding header</string>
+    <string name="accept_language_header">Accept-Language header</string>
+    <string name="custom_headers_json">Custom headers (JSON)</string>
+    <string name="check_binary_response">Check binary responses</string>
+    <string name="multi_connections">Multi-connections</string>
+    <string name="buffer_size">Buffer size (KB)</string>
+    <string name="code">HTTP code</string>
+    <string name="received">Received</string>
+    <string name="from_hyperlink">[from link]</string>
+    <string name="ignore_binary">Ignored binary</string>
+    <string name="ignore_ssl_and_tls_errors">Ignore SSL and TLS errors</string>
+    <string name="KB">KB</string>
+    <string name="ignored_domains">Ignored domains</string>
+    <string name="ignored_by_regex">Ignored by regex</string>
+    <string name="bullet">→</string>
+    <string name="every">Every</string>
+    <string name="name">Name</string>
+    <string name="minutes">Minutes</string>
+    <string name="hours">Hours</string>
+    <string name="days">Days</string>
+    <string name="weeks">Weeks</string>
+    <string name="save">Save</string>
+    <string name="copy_schedule">Copy</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="run_now">Run now</string>
+    <string name="youre_editing_a_copied_schedule_now_it_is_not_yet_saved">
+        You\&apos;re editing a copied schedule now. It is not yet saved.
+    </string>
+    <string name="should_schedules_also_run_when_the_device_standby">Should schedules also run when the device standby?</string>
+    <string name="we_will_need_your_permission">We will need your permission.</string>
+    <string name="deleting">Deleting.</string>
+    <string name="confirm_delete">Confirm delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="schedule_not_yet_saved">Schedule not yet saved.</string>
+    <string name="search">Search</string>
+    <string name="last_run">Last run</string>
+    <string name="saved">Saved.</string>
+    <string name="deleted">Deleted.</string>
+    <string name="auto_clean_success_results_after">Auto clean success results after (days)</string>
+    <string name="auto_clean_fail_results_after">Auto clean fail results after (days)</string>
+    <string name="auto_clean_old_results_when_there_are_more_than">Auto clean old results when there are more than</string>
+    <string name="clean_all_finished_results_now">Clean all finished results now</string>
+    <string name="error">Error</string>
+    <string name="check_the_url">Check the URL.</string>
+    <string name="check_the_custom_headers">Check the custom headers.</string>
+    <string name="check_the_name">Check the name.</string>
+    <string name="check_the_times">Check the times.</string>
+    <string name="it_is_running_now">It is running now.</string>
+    <string name="advanced">Advanced</string>
+    <string name="db_refresh_rate_ms">DB refresh rate (ms)</string>
+    <string name="queueing">Queueing.</string>
+    <string name="waiting_for_retry">Waiting for retry</string>
+    <string name="warning">Warning</string>
+    <string name="use_at_your_own_risk">This can be unsafe. Use at your own risk!</string>
+    <string name="progress">Progress</string>
+    <string name="connection_problem">Connection problem</string>
+    <string name="no_connection_for_scheduled_task">No connection for scheduled task.</string>
+    <string name="no_wifi_for_scheduled_task">No wifi for scheduled task.</string>
+    <string name="scheduled_task_cannot_start_we_will_retry_again_soon">Scheduled task cannot start, we will retry again soon.</string>
+    <string name="when_there_is_a_connection_problem">When there is a connection problem and tasks cannot run</string>
+    <string name="website_down">Website down</string>
+    <string name="progress_when_we_are_running_in_background">Progress when we are running in background</string>
+    <string name="when_your_website_is_down">When your website is down</string>
+    <string name="waiting_on_connection">Waiting on connection</string>
+    <string name="running">Running</string>
+    <string name="website_seems_down">Website seems down!</string>
+    <string name="power">Power</string>
+    <string name="allow_inexact_schedule_times_to_save_power">Allow inexact schedule times to save power</string>
+    <string name="use_wake_lock_when_in_background">Use wake lock when in background</string>
+    <string name="debug">Debug</string>
+    <string name="force_start_task_without_checking_if_connected">Force start tasks without checking if connected</string>
+    <string name="proxy">Proxy</string>
+    <string name="wifi_only">Wifi only</string>
+    <string name="use_proxy">Use proxy</string>
+    <string name="proxy_type">Proxy type</string>
+    <array name="proxy_types">
+        <item>"HTTP"</item>
+        <item>"SOCKS"</item>
+    </array>
+    <string name="proxy_address">Proxy address</string>
+    <string name="proxy_port">Proxy port</string>
+    <string name="disable_battery_optimizations">Disable battery optimizations</string>
+    <string name="this_is_already_disabled">This is already disabled.</string>
+    <string name="this_is_not_available_in_your_version_of_android">This is not available in your version of android.</string>
+    <string name="title_activity_license">License</string>
+    <string name="loading">Loading</string>
+    <string name="guide">Guide</string>
+    <string name="welcome">Welcome!</string>
+    <string name="swipe_to_read_the_quick_guide_or_press_the_left_button_to_close_the_guide">
+        Swipe to read the quick guide or press the left button to close the guide.
+    </string>
+    <string name="type_url_or_web_address">
+        1 - Type URL or web address.
+    </string>
+    <string name="configure_more_if_you_want">
+        2 - Configure more if you want.
+    </string>
+    <string name="run_check_now_or_schedule_regular_automatic_check">
+        3 - Run check now or schedule regular automatic check.
+    </string>
+    <string name="for_schedule_type_name_of_schedule_and_time">
+        4 - For schedule, type name of schedule and time.
+    </string>
+    <string name="see_results">
+        5 - See results.
+    </string>
+    <string name="for_schedule_you_will_also_notification_if_your_website_is_down">
+        6 - For schedule, you will also get notification if your website is down.
+    </string>
+    <string name="discover_many_extra_features">
+        7 - Discover many extra features!
+    </string>
+    <string name="you_are_ready_now">
+        8 - You are ready now!
+    </string>
+    <string name="thank_you_for_choosing_free_and_open_source_software">
+        Thank you for choosing Free &amp; Open Source Software.
+    </string>
+    <string name="this_program_is_free_software">
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    </string>
+
+</resources>

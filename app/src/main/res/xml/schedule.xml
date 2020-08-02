@@ -1,0 +1,191 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/schedule">
+        <Preference
+            app:icon="@drawable/save"
+            app:key="commandschedulesave"
+            app:title="@string/save" />
+        <Preference
+            app:icon="@drawable/copy"
+            app:key="commandschedulecopy"
+            app:title="@string/copy_schedule" />
+        <Preference
+            app:icon="@drawable/delete"
+            app:key="commandscheduledelete"
+            app:title="@string/delete" />
+        <Preference
+            app:icon="@drawable/cancel"
+            app:key="commandschedulecancel"
+            app:title="@string/cancel" />
+        <Preference
+            app:icon="@drawable/run"
+            app:key="commandschedulerunnow"
+            app:title="@string/run_now" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/every">
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="0"
+            app:key="scheduleweeks"
+            app:title="@string/weeks"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="1"
+            app:key="scheduledays"
+            app:title="@string/days"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="0"
+            app:key="schedulehours"
+            app:title="@string/hours"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="0"
+            app:key="scheduleminutes"
+            app:title="@string/minutes"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/required">
+        <EditTextPreference
+            app:key="schedule.name"
+            app:title="@string/name"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="schedule.taskurl"
+            app:title="@string/URL"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/optional">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="schedule.taskcheckhyperlinks"
+            app:title="@string/also_check_if_hyperlinks_are_up" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="1"
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskcheckhyperlinksmaxdepth"
+            app:title="@string/check_hyperlinks_max_depth"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskcheckhyperlinkifmatchregex"
+            app:title="@string/check_hyperlink_only_if_match_regex" />
+
+        <EditTextPreference
+            app:dependency="schedule.taskcheckhyperlinkifmatchregex"
+            app:key="schedule.taskcheckhyperlinkregex"
+            app:title="@string/check_regex"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskdontcheckhyperlinkifmatchregex"
+            app:title="@string/dont_check_hyperlink_if_match_regex" />
+
+        <EditTextPreference
+            app:dependency="schedule.taskdontcheckhyperlinkifmatchregex"
+            app:key="schedule.taskdontcheckhyperlinkregex"
+            app:title="@string/dont_check_regex"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskcheckhyperlinkssendreferer"
+            app:title="@string/send_referer" />
+        <SwitchPreferenceCompat
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskcheckhyperlinksonlyforspecificdomains"
+            app:title="@string/check_hyperlinks_only_to_specific_domains" />
+        <EditTextPreference
+            app:dependency="schedule.taskcheckhyperlinksonlyforspecificdomains"
+            app:key="schedule.taskcheckhyperlinksdomains"
+            app:title="@string/domains"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskcheckhyperlinksignorepart"
+            app:title="@string/ignore_part" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="schedule.taskcheckhyperlinks"
+            app:key="schedule.taskcheckjavascripthyperlinks"
+            app:title="@string/check_javascript_hyperlinks" />
+        <EditTextPreference
+            app:key="schedule.taskuseragent"
+            app:title="@string/user_agent"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="schedule.taskreferer"
+            app:title="@string/referer"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="10"
+            app:key="schedule.tasktimeout"
+            app:title="@string/timeout"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="3"
+            app:key="schedule.taskretry"
+            app:title="@string/retry"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="10"
+            app:key="schedule.taskretrydelay"
+            app:title="@string/retry_delay"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="schedule.tasksenddnt"
+            app:title="@string/send_do_not_track_dnt" />
+        <EditTextPreference
+            app:key="schedule.taskauthorizationheader"
+            app:title="@string/authorization_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="schedule.taskacceptheader"
+            app:title="@string/accept_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="schedule.taskacceptcharsetheader"
+            app:title="@string/accept_charset_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="schedule.taskacceptencodingheader"
+            app:title="@string/accept_encoding_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="schedule.taskacceptlanguageheader"
+            app:title="@string/accept_language_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="schedule.taskcustomheaders"
+            app:title="@string/custom_headers_json"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="schedule.taskcheckbinaryresponses"
+            app:title="@string/check_binary_response" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="schedule.taskignoresslerrors"
+            app:title="@string/ignore_ssl_and_tls_errors" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,95 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:key="commandthemeconfiguration"
+        app:title="@string/theme_configuration" />
+    <EditTextPreference
+        android:inputType="number"
+        app:defaultValue="3"
+        app:key="multiconnections"
+        app:title="@string/multi_connections"
+        app:useSimpleSummaryProvider="true" />
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="wifionly"
+        app:title="@string/wifi_only" />
+    <EditTextPreference
+        android:inputType="number"
+        app:defaultValue="1"
+        app:key="autocleansuccessresultsafter"
+        app:title="@string/auto_clean_success_results_after"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        android:inputType="number"
+        app:defaultValue="7"
+        app:key="autocleanfailresultsafter"
+        app:title="@string/auto_clean_fail_results_after"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        android:inputType="number"
+        app:defaultValue="50"
+        app:key="autocleanoldcount"
+        app:title="@string/auto_clean_old_results_when_there_are_more_than"
+        app:useSimpleSummaryProvider="true" />
+    <Preference
+        app:key="commandcleanfinishedresultsnow"
+        app:title="@string/clean_all_finished_results_now" />
+    <PreferenceCategory app:title="@string/power">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="allowinexactscheduletimes"
+            app:title="@string/allow_inexact_schedule_times_to_save_power" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="usewakelockwheninbackground"
+            app:title="@string/use_wake_lock_when_in_background" />
+        <Preference
+            app:key="commanddisablebatteryoptimizations"
+            app:title="@string/disable_battery_optimizations" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/proxy">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="useproxy"
+            app:title="@string/use_proxy" />
+        <ListPreference
+            android:defaultValue="HTTP"
+            android:dependency="useproxy"
+            android:entries="@array/proxy_types"
+            android:entryValues="@array/proxy_types"
+            android:key="proxytype"
+            android:title="@string/proxy_type"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:dependency="useproxy"
+            app:key="proxyaddress"
+            app:title="@string/proxy_address"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:dependency="useproxy"
+            android:inputType="number"
+            app:key="proxyport"
+            app:title="@string/proxy_port"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/advanced">
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="1000"
+            app:key="dbrefreshrate"
+            app:title="@string/db_refresh_rate_ms"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="128"
+            app:key="buffersize"
+            app:title="@string/buffer_size"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/debug">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="forcestart"
+            app:title="@string/force_start_task_without_checking_if_connected" />
+    </PreferenceCategory>
+</PreferenceScreen>

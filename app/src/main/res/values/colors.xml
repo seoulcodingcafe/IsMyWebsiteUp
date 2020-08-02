@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cyanea_primary_reference">#FF562C22</color>
+    <color name="cyanea_primary_dark_reference">#FF49251C</color>
+    <color name="cyanea_primary_light_reference">#FF6F4B43</color>
+    <color name="cyanea_accent_reference">#FFA55634</color>
+    <color name="cyanea_accent_dark_reference">#FF8C492C</color>
+    <color name="cyanea_accent_light_reference">#FFB26F52</color>
+    <color name="cyanea_background_reference">#FFEEDFD8</color>
+    <color name="cyanea_background_dark_reference">#FFCABDB7</color>
+    <color name="cyanea_background_light_reference">#FFF0E3DD</color>
+    <color name="welcome_background_light">#FFD5253A</color>
+    <color name="welcome_background_dark">#FFA01C2C</color>
+    <color name="welcome_background_light_1">#FF34BAEA</color>
+    <color name="welcome_background_dark_1">#FF278CB0</color>
+    <color name="welcome_background_light_2">#FFAB7B57</color>
+    <color name="welcome_background_dark_2">#FF805C41</color>
+    <color name="welcome_background_light_3">#FF2A732A</color>
+    <color name="welcome_background_dark_3">#FF205620</color>
+    <color name="welcome_background_light_4">#FF1E9780</color>
+    <color name="welcome_background_dark_4">#FF177160</color>
+    <color name="welcome_background_light_5">#FF96C2D8</color>
+    <color name="welcome_background_dark_5">#FF7192A2</color>
+    <color name="welcome_background_light_6">#FFF34744</color>
+    <color name="welcome_background_dark_6">#FFB63533</color>
+    <color name="welcome_background_light_7">#FFB11AA9</color>
+    <color name="welcome_background_dark_7">#FF85147F</color>
+    <color name="welcome_background_light_8">#FFFFF0FC</color>
+    <color name="welcome_background_dark_8">#FFBFB4BD</color>
+</resources>

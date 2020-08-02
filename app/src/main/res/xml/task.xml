@@ -1,0 +1,148 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/task">
+        <Preference
+            app:icon="@drawable/run"
+            app:key="commandrun"
+            app:title="@string/run_check" />
+        <Preference
+            app:icon="@drawable/schedule"
+            app:key="commandschedule"
+            app:title="@string/schedule_check" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/required">
+        <EditTextPreference
+            app:key="taskurl"
+            app:title="@string/URL"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/optional">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="taskcheckhyperlinks"
+            app:title="@string/also_check_if_hyperlinks_are_up" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="1"
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskcheckhyperlinksmaxdepth"
+            app:title="@string/check_hyperlinks_max_depth"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskcheckhyperlinkifmatchregex"
+            app:title="@string/check_hyperlink_only_if_match_regex" />
+
+        <EditTextPreference
+            app:dependency="taskcheckhyperlinkifmatchregex"
+            app:key="taskcheckhyperlinkregex"
+            app:title="@string/check_regex"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskdontcheckhyperlinkifmatchregex"
+            app:title="@string/dont_check_hyperlink_if_match_regex" />
+
+        <EditTextPreference
+            app:dependency="taskdontcheckhyperlinkifmatchregex"
+            app:key="taskdontcheckhyperlinkregex"
+            app:title="@string/dont_check_regex"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskcheckhyperlinkssendreferer"
+            app:title="@string/send_referer" />
+        <SwitchPreferenceCompat
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskcheckhyperlinksonlyforspecificdomains"
+            app:title="@string/check_hyperlinks_only_to_specific_domains" />
+        <EditTextPreference
+            app:dependency="taskcheckhyperlinksonlyforspecificdomains"
+            app:key="taskcheckhyperlinksdomains"
+            app:title="@string/domains"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskcheckhyperlinksignorepart"
+            app:title="@string/ignore_part" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="taskcheckhyperlinks"
+            app:key="taskcheckjavascripthyperlinks"
+            app:title="@string/check_javascript_hyperlinks" />
+        <EditTextPreference
+            app:key="taskuseragent"
+            app:title="@string/user_agent"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="taskreferer"
+            app:title="@string/referer"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="10"
+            app:key="tasktimeout"
+            app:title="@string/timeout"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="3"
+            app:key="taskretry"
+            app:title="@string/retry"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="10"
+            app:key="taskretrydelay"
+            app:title="@string/retry_delay"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="tasksenddnt"
+            app:title="@string/send_do_not_track_dnt" />
+        <EditTextPreference
+            app:key="taskauthorizationheader"
+            app:title="@string/authorization_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="taskacceptheader"
+            app:title="@string/accept_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="taskacceptcharsetheader"
+            app:title="@string/accept_charset_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="taskacceptencodingheader"
+            app:title="@string/accept_encoding_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="taskacceptlanguageheader"
+            app:title="@string/accept_language_header"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="taskcustomheaders"
+            app:title="@string/custom_headers_json"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="taskcheckbinaryresponses"
+            app:title="@string/check_binary_response" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="taskignoresslerrors"
+            app:title="@string/ignore_ssl_and_tls_errors" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

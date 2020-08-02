@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_task">
+
+    <fragment
+        android:id="@+id/navigation_task"
+        android:name="io.github.ismywebsiteup.ui.task.TaskFragment"
+        android:label="@string/task"
+        tools:layout="@layout/fragment_task" />
+
+    <fragment
+        android:id="@+id/navigation_result"
+        android:name="io.github.ismywebsiteup.ui.result.ResultFragment"
+        android:label="@string/result"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/navigation_schedule"
+        android:name="io.github.ismywebsiteup.ui.schedule.ScheduleFragment"
+        android:label="@string/schedule"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/navigation_configuration"
+        android:name="io.github.ismywebsiteup.ui.config.ConfigFragment"
+        android:label="@string/configuration"
+        tools:layout="@layout/fragment_configuration" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="io.github.ismywebsiteup.ui.about.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

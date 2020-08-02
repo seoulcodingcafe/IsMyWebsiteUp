@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.github.ismywebsiteup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="io.github.ismywebsiteup.ClassApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cyanea.Light.DarkActionBar"
+        tools:replace="android:icon">
+        <activity
+            android:name="io.github.ismywebsiteup.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="io.github.ismywebsiteup.ResultActivity"
+            android:parentActivityName="io.github.ismywebsiteup.MainActivity" />
+        <activity
+            android:name="io.github.ismywebsiteup.LicenseActivity"
+            android:label="@string/title_activity_license"
+            android:theme="@style/NoActionBar" />
+
+        <service
+            android:name="io.github.ismywebsiteup.Scheduler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="io.github.ismywebsiteup.receivers.Update"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.github.ismywebsiteup.receivers.Boot"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.github.ismywebsiteup.ScheduleActivity"
+            android:label="@string/schedule"
+            android:parentActivityName="io.github.ismywebsiteup.MainActivity" />
+
+        <service
+            android:name="io.github.ismywebsiteup.MainService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="io.github.ismywebsiteup.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
